@@ -1,0 +1,20 @@
+-- Show first 10 customers:
+SELECT * FROM customer
+LIMIT 10;
+
+
+-- How many custommers have first name with first letter D?
+SELECT COUNT(*) FROM customer
+WHERE first_name LIKE 'D%';
+
+
+-- Total amount spent by customer
+SELECT customer_id, SUM(amount) AS total_spent FROM payment
+GROUP BY customer_id
+ORDER BY total_Spent DESC:
+
+-- What customer  has the lowest cusotmer ID number whose name ends with an 'A' and has an address ID lower than 40?
+SELECT first_name, last_name FROM customer
+WHERE first_name LIKE '%A'
+AND address_id < 40
+ORDER BY customer_id;
