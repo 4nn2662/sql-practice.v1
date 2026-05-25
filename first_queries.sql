@@ -22,12 +22,12 @@ AND address_id < 40
 ORDER BY customer_id;
 
 
---Which move rating are the most common?
+--Which movie rating are the most common?
 SELECT rating, COUNT(*) AS total_movies FROM film
 GROUPBY rating
 ORDER BY total_movies DESC;
 
 --What is the average payment amount per customer?
 SELECT customer_id, AVG(amount) AS avg_payment FROM payment
-GROUP BY payment
+GROUP BY customer_id
 ORDER BY avg_payment DESC;
