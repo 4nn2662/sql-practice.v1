@@ -1,7 +1,6 @@
 # sql-practice.v1
 
-This repository contains my SQL learning exerices and mini data anaytics projects.
-
+This repository contains my SQL exerices created using DVD Rental sample database.
 Currently learning:
 - SQL
 - Data Analytics
