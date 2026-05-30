@@ -24,7 +24,7 @@ ORDER BY customer_id;
 
 --Which movie rating are the most common?
 SELECT rating, COUNT(*) AS total_movies FROM film
-GROUPBY rating
+GROUP BY rating
 ORDER BY total_movies DESC;
 
 --What is the average payment amount per customer?
