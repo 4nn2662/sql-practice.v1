@@ -20,6 +20,7 @@ SELECT first_name, last_name FROM customer
 WHERE first_name LIKE '%A'
 AND address_id < 40
 ORDER BY customer_id;
+LIMIT 1;
 
 
 --Which movie rating are the most common?
